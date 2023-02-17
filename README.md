@@ -4,5 +4,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Imagen ilustrativa de la app
 ![Imagen ilustrativa de la app](https://github.com/Kerizr/React-todoapp/blob/main/TODO.jpg)
 
-## El codigo principal de este proyecto se encuentra dentro de la carpeta componentes
+## El codigo principal de este proyecto se encuentra dentro src/ componentes
 
