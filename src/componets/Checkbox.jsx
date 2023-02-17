@@ -37,7 +37,7 @@ const Checkbox = props => {
                 xmlnsXlink="http://www.w3.org/1999/xlink" 
                 viewBox="0 0 200 25" 
                 className="todo_icon">
-                    <use xlinkHref="#todo_line"  className="todo_line" />
+                    {done ? (<use xlinkHref="#todo_line" className="todo_line" />): ("")}
                     <use xlinkHref="#todo_box"  className="todo_box" />
                     <use xlinkHref="#todo_check"  className="todo_check" />
                     <use xlinkHref="#todo_circle"  className="todo_circle" />
