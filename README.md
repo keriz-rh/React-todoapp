@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Imagen ilustrativa de la app
-![Imagen ilustrativa de la app](https://github.com/Kerizr/React-todoapp/blob/main/TODO.jpg)
+![Imagen ilustrativa de la app]
 
 ## El codigo principal de este proyecto se encuentra dentro src/ [componentes](https://github.com/Kerizr/React-todoapp/tree/main/src/componets)
 
