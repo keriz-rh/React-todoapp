@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Se muestra una aplicación creada con React, una TODOapp para ser exactos
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
