@@ -1,50 +1,42 @@
-import React, { useState} from "react";
-
+import React, { useState } from "react";
 
 const FromTodo = props => {
-    const [description, setDescription] = useState("");
-    const {addItem} = props;
-    //e hace refencia a form
-    const handleSubmit = e => { //Con handlesubmit limpiamos el texto y lo enviamos al console
-        e.preventDefault(); //preventDefault prevee el comportamiento Dfault de nuestra formulario o html, lo quita
-        console.log(description)
-        setDescription("");
+    const [description, setDescription] = useState("");  // Estado para almacenar la descripción del formulario
+    const { addItem } = props;  // Función para agregar elementos a la lista recibida como prop
 
+    const handleSubmit = e => {
+        e.preventDefault();  // Previene el comportamiento predeterminado del formulario
+
+        console.log(description);  // Imprime la descripción en la consola
+
+        setDescription("");  // Limpia la descripción después de enviar el formulario
+
+        // Crea un nuevo elemento y lo agrega a la lista utilizando la función addItem
         addItem({       
             done: false,
             id: (new Date()).toString(),
             description
         });
 
-        setDescription("");
+        setDescription("");  // Limpia la descripción después de agregar el elemento
     }
-
 
     return (
         <form onSubmit={handleSubmit}>
             <div className="todo-list">
                 <div className="file-input">
                     <input 
-                    type = 'text'
-                    className="text"
-                    value={description}
-                    onChange={e => setDescription(e.target.value)}
+                        type="text"
+                        className="text"
+                        value={description}
+                        onChange={e => setDescription(e.target.value)}  // Actualiza la descripción según lo que se escribe en el campo de texto
                     />
                     <button 
-                        className= "button pink"
-                        disabled={description ? "" : "disabled"}
-                        /*
-                        Operator ternario "?" es cómo si fuera un iff en una sola linea de codigo
-                        Lo mismo
-                        if (Description == ""){
-                            disab0led= "disabled"
-                        } else {
-                            disabled = ""
-                        }
-                         */
+                        className="button pink"
+                        disabled={description ? "" : "disabled"}  // Deshabilita el botón si la descripción está vacía
                     >
-                        agregar tarea 
-                        </button>
+                        Agregar tarea
+                    </button>
                 </div>
             </div>
         </form>
